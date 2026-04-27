@@ -1,25 +1,38 @@
 .header {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  padding: 28px 70px;
+  height: 82px;
+  padding: 0 70px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 20;
+  justify-content: space-between;
+  z-index: 50;
+  background: transparent;
 }
 
 .logo {
   font-family: 'Cinzel', serif;
+  color: var(--museum-gold);
+  font-size: 20px;
   letter-spacing: 2px;
-  color: var(--gold);
-  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  gap: 50px;
 }
 
 .nav a {
-  color: #d7c7aa;
-  margin-left: 32px;
-  font-size: 13px;
+  color: var(--museum-cream);
+    /* font-family: 'Cinzel', serif; */
+  font-size: 14px;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: var(--museum-gold);
 }

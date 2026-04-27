@@ -1,23 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
-  --bg-dark: #080704;
-  --bg-dark-2: #11100c;
-  --cream: #f3ead8;
-  --cream-2: #f7ecd6;
-  --gold: #b99a64;
-  --muted-gold: #8f8168;
-  --text-muted: #bdb19e;
-  --section-light: #f1eadf;
-  --text-dark: #18140f;
-  --card-light: #fffaf2;
-  --border-gold: rgba(185, 154, 100, 0.45);
+  --museum-brown: #28241d;
+  --museum-brown-light: #3a3327;
+  --museum-dark: #0f0d0a;
+  --museum-gold: #b3945a;
+  --museum-gold-soft: #d2b879;
+  --museum-cream: #f4ead6;
+  --museum-muted: #b9ad98;
+  --section-light: #eee7dc;
+  --text-dark: #17130f;
 }
 
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -25,15 +23,11 @@ html {
 }
 
 body {
-  background: var(--bg-dark);
-  color: var(--cream);
   font-family: 'Inter', sans-serif;
+  background: var(--museum-brown);
+  color: var(--museum-cream);
 }
 
 a {
   text-decoration: none;
-}
-
-img {
-  max-width: 100%;
 }

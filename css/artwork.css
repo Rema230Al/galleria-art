@@ -2,6 +2,7 @@
   padding: 95px 70px;
   background: var(--section-light);
   color: var(--text-dark);
+  height: 40rem;
 }
 
 .section-heading {
