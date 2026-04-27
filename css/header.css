@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 28px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+}
+
+.logo {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  color: var(--gold);
+  font-size: 18px;
+}
+
+.nav a {
+  color: #d7c7aa;
+  margin-left: 32px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}

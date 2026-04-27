@@ -4,13 +4,104 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discover a Masterpiece</title>
-  <link  rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/artwork.css" />
+  <link rel="stylesheet" href="css/footer.css" />
 </head>
 
 <body>
 
+  <!-- Header -->
+  <header class="header">
+    <h2 class="logo">Galleria</h2>
 
+    <nav class="nav">
+      <a href="#hero">Home</a>
+      <a href="#search-section">Explore</a>
+      <a href="#footer">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+
+    <div class="hero-text">
+      <p class="small-title">Virtual Museum Experience</p>
+
+      <h1>
+        Discover a <br />
+        Masterpiece
+      </h1>
+
+      <p class="hero-description">
+        Explore timeless artworks from museum collections and discover
+        the stories behind each piece.
+      </p>
+
+      <a href="#search-section" class="hero-btn">Explore Now</a>
+
+      <div class="hero-meta">
+        <span>Collection No. 01</span>
+        <span>Fine Arts</span>
+        <span>2026</span>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="assets/images/statue.png" alt="Classical statue" />
+    </div>
+
+    <div class="hero-cards">
+      <div class="mini-card">
+        <p>Featured Gallery</p>
+      </div>
+
+      <div class="mini-card">
+        <p>Classic Collection</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Search / API Section -->
+  <section class="search-section" id="search-section">
+
+    <div class="section-heading">
+      <p class="small-title">Explore the Collection</p>
+      <h2>Find Your Artwork</h2>
+      <p>
+        Search for artworks by keyword, artist, or theme.
+      </p>
+    </div>
+
+    <!-- Form required for assignment -->
+    <form id="artForm" class="search-form">
+      <input 
+        type="text" 
+        id="searchInput" 
+        placeholder="Try: flowers, portrait, sculpture..." 
+      />
+
+      <button type="submit">Search</button>
+      <button type="button" id="clearBtn">Clear</button>
+    </form>
+
+    <!-- Messages / loading -->
+    <p id="message" class="message"></p>
+
+    <!-- API result appears here -->
+    <div id="result" class="artwork-result"></div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <p>© 2026 Discover a Masterpiece</p>
+    <p>Powered by The Metropolitan Museum of Art Collection API</p>
+  </footer>
   <script src="script.js"></script>
 
 </body>
 </html>
+

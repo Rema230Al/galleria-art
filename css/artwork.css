@@ -1,0 +1,64 @@
+.search-section {
+  padding: 95px 70px;
+  background: var(--section-light);
+  color: var(--text-dark);
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 40px;
+}
+
+.section-heading h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 46px;
+  margin-bottom: 12px;
+}
+
+.search-form {
+  max-width: 760px;
+  margin: 0 auto 38px;
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.search-form input {
+  width: min(420px, 100%);
+  padding: 16px 18px;
+  border: 1px solid #c8bda8;
+  border-radius: 999px;
+  font-size: 15px;
+  background: var(--card-light);
+}
+
+.search-form button {
+  padding: 16px 24px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  background: var(--text-dark);
+  color: var(--cream-2);
+  font-weight: 600;
+}
+
+.artwork-result {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.art-card {
+  background: var(--card-light);
+  border-radius: 28px;
+  padding: 28px;
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 30px;
+}
+
+.art-card img {
+  width: 100%;
+  border-radius: 18px;
+}
