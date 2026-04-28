@@ -2,9 +2,10 @@
   min-height: 100vh;
   padding: 120px 70px;
   display: grid;
-  grid-template-columns: 1fr 0.9fr 0.8fr;
+  /* grid-template-columns: 1fr 0.9fr 0.8fr; */
+  grid-template-columns: 1fr 0.9fr 360px;
   align-items: center;
-  gap: 30px;
+  gap: 5px;
 
   background:
     radial-gradient(circle at 48% 45%, rgba(179, 148, 90, 0.18), transparent 35%),
@@ -40,16 +41,19 @@
 
 
 .hero-image img {
-  max-height: 70vh;
-  object-fit: contain;
+  max-height: 150vh;
+  max-width: 250%;
+  /* object-fit: contain; */
+  transform: translateX(-120px);
 }
 
 
 .genral-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
   width: 360px;
+  margin-left: 5rem;
 }
 
 
@@ -62,7 +66,7 @@
   inset: 0;
   border: 1px solid rgba(211, 184, 130, 0.35);
   border-radius: 18px;
-  transform: translate(10px, -10px);
+  transform: translate(-10px, -10px);
 }
 
 
@@ -74,11 +78,13 @@
   border: 1px solid rgba(211, 184, 130, 0.25);
   overflow: hidden;
   box-shadow: 0 18px 30px rgba(0,0,0,0.4);
+  
 }
 
 
 .muse-card {
   height: 165px;
+  
 }
 
 .muse-card .card-front {
@@ -129,8 +135,32 @@
   font-family: 'Cinzel', serif;
 }
 
-
 .mini-card img {
   height: 100px;
   object-fit: contain;
+}
+
+.search-section {
+  position: relative;
+}
+
+
+.side-img {
+  position: absolute;
+  width: 200px; 
+  opacity: 0.9;
+}
+
+
+.left-img {
+  left: 15px;
+  top: 40px; 
+}
+
+
+.right-img {
+  right: 0;
+  top: 25rem; 
+  padding-right: 1rem;
+  
 }
