@@ -144,28 +144,31 @@
 
 .search-section {
   position: relative;
+  overflow: hidden;
 }
 
 
 .side-img {
   position: absolute;
-  width: 200px; 
-  opacity: 0.9;
+  z-index: 1;
+  object-fit: contain;
+  pointer-events: none;
 }
-
 
 .left-img {
-  left: 15px;
-  top: 40px; 
+  width: 40px;      
+  left: 30px;
+  bottom: 21rem;
+
 }
-
-
+.mid-img{
+  width: 40px;      
+  bottom: 13rem;
+  left: 30px;
+}
 .right-img {
-  right: 0;
-  top: 25rem; 
-  padding-right: 1rem;
-  
+  width: 40px;      
+  bottom: 17rem;
+  left: 30px;
+
 }
-
-
-/*###########*/
