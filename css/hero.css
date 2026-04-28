@@ -18,6 +18,7 @@
   font-size: 80px;
   line-height: 0.95;
   color: #f4ead6;
+  margin-right: 20px;
 }
 
 .tit-span {
@@ -44,16 +45,17 @@
   max-height: 150vh;
   max-width: 250%;
   /* object-fit: contain; */
-  transform: translateX(-120px);
+  transform: translateX(-135px);
 }
 
 
 .genral-card {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 30px;
   width: 360px;
-  margin-left: 5rem;
+  padding-right: 5rem;
+  margin-left: 3rem;
 }
 
 
@@ -164,3 +166,6 @@
   padding-right: 1rem;
   
 }
+
+
+/*###########*/
