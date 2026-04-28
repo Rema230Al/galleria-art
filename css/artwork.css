@@ -2,7 +2,7 @@
   padding: 95px 70px;
   background: var(--section-light);
   color: var(--text-dark);
-  height: 40rem;
+  height: 50rem;
 }
 
 .section-heading {
@@ -49,20 +49,42 @@
 }
 
 .artwork-result {
-  max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto 80px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .art-card {
-  background: var(--card-light);
-  border-radius: 28px;
-  padding: 28px;
+  width: 900px;
+  max-width: 90%;
   display: grid;
-  grid-template-columns: 330px 1fr;
-  gap: 30px;
+  grid-template-columns: 360px 1fr;
+  gap: 35px;
+  align-items: center;
+  background: rgba(23, 19, 15, 0.08);
+  border: 1px solid rgba(179, 148, 90, 0.35);
+  border-radius: 24px;
+  padding: 24px;
+  margin-left: 3rem;
 }
 
 .art-card img {
   width: 100%;
+  height: 330px;
+  object-fit: cover;
   border-radius: 18px;
+}
+
+.art-info h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 28px;
+  color: #0f0d0a;
+  margin-bottom: 20px;
+}
+
+.art-info p {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: #0f0d0a;
 }
