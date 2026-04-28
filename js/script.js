@@ -9,12 +9,6 @@ form.addEventListener("submit", function (e) {
   e.preventDefault();
 
   const keyword = searchInput.value.trim();
-
-//   if (keyword === "") {
-//     showMessage("Please enter a keyword.", "error");
-//     return;
-//   }
-
   searchArtworks(keyword);
 });
 
@@ -85,8 +79,3 @@ function createArtworkCard(art) {
 
   result.appendChild(card);
 }
-
-// function showMessage(text, type) {
-//   message.textContent = text;
-//   message.className = "message " + type;
-// }

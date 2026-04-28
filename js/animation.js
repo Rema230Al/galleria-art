@@ -1,4 +1,5 @@
 gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
 
 gsap.from(".hero-text", {
   x: -80,
@@ -31,3 +32,4 @@ gsap.from(".search-section", {
   duration: 1,
   ease: "power3.out"
 });
+

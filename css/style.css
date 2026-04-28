@@ -23,7 +23,8 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+    font-family: 'Cinzel', serif;
   background: var(--museum-brown);
   color: var(--museum-cream);
 }
