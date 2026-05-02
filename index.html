@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
   <title>Discover a Masterpiece</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/artwork.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/artwork.css">
   <link rel="stylesheet" href="css/hero.css">
-  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/response.css">
 </head>
 
 <body>
-
 
   <header class="header">
     <h2 class="logo">Galleria</h2>
@@ -25,88 +26,79 @@
     </nav>
   </header>
 
+  <section class="hero" id="hero">
 
- <section class="hero">
+    <div class="hero-text">
+      <h1>
+        Discover a <br>
+        <span class="tit-span">Masterpiece</span>
+      </h1>
 
+      <p class="hero-description">
+        Explore timeless artworks from museum collections and discover
+        the stories behind each piece.
+      </p>
 
-  <div class="hero-text">
-    <h1>
-      Discover a <br />
-      <span class="tit-span">Masterpiece</span>
-    </h1>
-
-    <p class="hero-description">
-      Explore timeless artworks from museum collections and discover
-      the stories behind each piece.
-    </p>
-
-    <div class="hero-meta">
-      <span>Collection No. 01</span>
-      <span>Fine Arts</span>
-      <span>2026</span>
-    </div>
-  </div>
-
-
-  <div class="hero-image">
-    <img src="assets/julius.png" alt="statue" />
-  </div>
-
-  
-  <div class="genral-card">
-
-    <div class="double-card muse-card">
-      <div class="card-back"></div>
-
-      <div class="card-front">
-        <img src="assets/museum.jpg" />
-        <p>BIG MUSEUM TOUR</p>
+      <div class="hero-meta">
+        <span>Collection No. 01</span>
+        <span>Fine Arts</span>
+        <span>2026</span>
       </div>
     </div>
 
-   
-    <div class="hero-cards">
+    <div class="hero-image">
+      <img src="assets/julius.png" alt="Classical Roman statue">
+    </div>
 
-      <div class="double-card mini-card">
+    <div class="genral-card">
+
+      <div class="double-card muse-card">
         <div class="card-back"></div>
 
         <div class="card-front">
-          <div class="card-text">
-            <span>PAINTING</span>
-            <strong>MonaLisa</strong>
-          </div>
-
-          <img src="assets/mona-lisa.png" />
+          <img src="assets/museum.jpg" alt="Museum gallery tour">
+          <p>BIG MUSEUM TOUR</p>
         </div>
       </div>
 
-      <div class="double-card mini-card">
-        <div class="card-back"></div>
+      <div class="hero-cards">
 
-        <div class="card-front">
-          <div class="card-text">
-            <span>PAINTING</span>
-            <strong>SAILINGSHIP</strong>
+        <div class="double-card mini-card">
+          <div class="card-back"></div>
+
+          <div class="card-front">
+            <div class="card-text">
+              <span>PAINTING</span>
+              <strong>MONA LISA</strong>
+            </div>
+
+            <img src="assets/mona-lisa.png" alt="Mona Lisa painting">
           </div>
-
-          <img src="assets/vinteg-painting.jpg" />
         </div>
-      </div>
 
+        <div class="double-card mini-card">
+          <div class="card-back"></div>
+
+          <div class="card-front">
+            <div class="card-text">
+              <span>PAINTING</span>
+              <strong>SAILING SHIP</strong>
+            </div>
+
+            <img src="assets/vinteg-painting.jpg" alt="Vintage sailing ship painting">
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
 
-</section>
-
-
-
+  </section>
 
   <section class="search-section" id="search-section">
 
-
-     <img src="assets/icon-dec.png" class="side-img left-img" />
-    <img src="assets/icon-dec.png" class="side-img right-img" />
-    <img src="assets/icon-dec.png" class="side-img mid-img" />
+    <img src="assets/icon-dec.png" class="side-img left-img" alt="Decorative icon">
+    <img src="assets/icon-dec.png" class="side-img right-img" alt="Decorative icon">
+    <img src="assets/icon-dec.png" class="side-img mid-img" alt="Decorative icon">
 
     <div class="section-heading">
       <p class="small-title">Explore the Collection</p>
@@ -116,37 +108,33 @@
       </p>
     </div>
 
-   
     <form id="artForm" class="search-form">
-      <input 
-        type="text" 
-        id="searchInput" 
-        placeholder="SEARCH..." 
-      />
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="SEARCH..."
+      >
 
       <button type="submit">Search</button>
       <button type="button" id="clearBtn">Clear</button>
     </form>
 
-
     <p id="message" class="message"></p>
 
     <div id="result" class="artwork-result"></div>
-    
-    <img src="assets/icon-dec.png" class="side-img left2-img" />
-    <img src="assets/icon-dec.png" class="side-img right2-img" />
-    <img src="assets/icon-dec.png" class="side-img mid2-img" />
+
+    <img src="assets/icon-dec.png" class="side-img left2-img" alt="Decorative icon">
+    <img src="assets/icon-dec.png" class="side-img right2-img" alt="Decorative icon">
+    <img src="assets/icon-dec.png" class="side-img mid2-img" alt="Decorative icon">
+
   </section>
 
-
-   <footer class="footer" id="footer">
+  <footer class="footer" id="footer">
     <p>© 2026 Discover a Masterpiece</p>
     <p>Powered by The Metropolitan Museum of Art Collection API</p>
     <p class="name">Remas Alsuami</p>
   </footer>
 
- 
-  
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
@@ -154,4 +142,3 @@
 
 </body>
 </html>
-

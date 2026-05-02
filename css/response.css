@@ -1,171 +1,200 @@
-/*LAAATEERR*//* Responsive */
-@media (max-width: 1100px) {
-  .hero {
+
+@media (max-width: 992px) {
+   .hero {
+    display: grid;
     grid-template-columns: 1fr;
-    padding: 110px 40px 60px;
-    text-align: center;
-  }
-
-  .hero-text h1 {
-    font-size: 60px;
-  }
-
-  .hero-image {
-    order: 2;
-  }
-
-  .hero-image img {
-    max-width: 70%;
-    max-height: 70vh;
-    transform: none;
   }
 
   .genral-card {
-    order: 3;
+    grid-row: 2;
+    margin: 30px auto 0;
+    padding-right: 0;
     width: 100%;
-    margin-left: 0;
-    align-items: center;
-  }
-
-  .hero-cards {
     max-width: 500px;
-    width: 100%;
   }
 
-  .search-form {
-    flex-wrap: wrap;
-    justify-content: center;
+  .hero-text {
+    grid-row: 1;
   }
 
-  .search-form input {
-    width: 100%;
-    max-width: 560px;
+  .hero-image img{
+    display: none;
   }
 
-  .art-card,
-  .loading-card {
-    width: 90%;
-    grid-template-columns: 1fr;
-    text-align: center;
+  .art-card{
+  height: 35rem;
+  width: 55rem;
+  
   }
-
-  .art-card img,
-  .skeleton-img {
-    height: 300px;
+  .search-section{
+    height: 65rem;
   }
 }
 
-@media (max-width: 700px) {
+
+@media (max-width: 576px) {
+
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
   .header {
-    padding: 25px 24px;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 16px 20px;
     flex-direction: column;
-    gap: 18px;
+    gap: 12px;
+    background: rgba(15, 13, 10, 0.95);
+    box-sizing: border-box;
+  }
+
+  .logo {
+    font-size: 16px;
   }
 
   .nav {
-    gap: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .nav a {
+    font-size: 10px;
+    letter-spacing: 2px;
   }
 
   .hero {
-    padding: 140px 22px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+    padding: 150px 20px 50px;
+    text-align: center;
+    gap: 35px;
+    box-sizing: border-box;
+  }
+
+  .hero-text {
+    width: 100%;
+    max-width: 100%;
+    order: 1;
   }
 
   .hero-text h1 {
-    font-size: 42px;
+    font-size: 34px;
+    line-height: 1.05;
+    margin: 0;
+    padding: 0;
   }
 
   .hero-description {
     max-width: 100%;
-    font-size: 15px;
+    margin: 18px auto 0;
+    font-size: 13px;
+    line-height: 1.6;
   }
 
   .hero-meta {
     justify-content: center;
     flex-wrap: wrap;
+    font-size: 10px;
+    gap: 12px;
   }
 
-  .hero-image img {
-    max-width: 90%;
+  .hero-image {
+    display: none;
+  }
+
+  .genral-card {
+    order: 2;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .hero-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .muse-card {
     height: auto;
   }
 
-  .hero-cards {
-    grid-template-columns: 1fr;
+  .mini-card {
+    height: 110px;
+  }
+
+  .mini-card img {
+    height: 85px;
   }
 
   .search-section {
-    padding: 100px 20px 60px;
+    width: 100%;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    height: 65rem;
+  }
+
+  /* 🔥 تعديل كارد الفيتش */
+ .art-card {
+    width: 90%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    padding: 14px;
+    display: block;
+    overflow: hidden;
+  }
+
+  .art-card img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 130px;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    border-radius: 10px;
+  }
+
+  .art-card h1,
+  .art-card h2,
+  .art-card h3 {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 8px 0;
+  }
+
+  .art-card p,
+  .art-card span {
+    font-size: 12px;
+    line-height: 1.4;
   }
 
   .section-heading h2 {
-    font-size: 42px;
+    font-size: 30px;
   }
 
   .search-form {
     flex-direction: column;
     align-items: center;
+    gap: 12px;
   }
 
-  .search-form input,
-  .search-form button {
+  .search-form input {
     width: 100%;
-    max-width: 420px;
+    max-width: 320px;
   }
 
-  .art-card,
-  .loading-card {
-    padding: 18px;
-    gap: 20px;
-  }
-
-  .art-card img,
-  .skeleton-img {
-    height: 240px;
-  }
-
-  .art-info h3 {
-    font-size: 24px;
-  }
-
-  .art-info p {
-    font-size: 15px;
-  }
-
-  .side-img {
-    opacity: 0.25;
-  }
-
-  .right-img {
+  .search-form button {
     width: 120px;
-    right: 20px;
-  }
-
-  .left-img {
-    width: 80px;
-    left: 18px;
   }
 }
-
-@media (max-width: 420px) {
-  .hero-text h1 {
-    font-size: 34px;
-  }
-
-  .section-heading h2 {
-    font-size: 34px;
-  }
-
-  .nav a {
-    font-size: 12px;
-  }
-
-  .art-card img,
-  .skeleton-img {
-    height: 200px;
-  }
-}
-
-
